@@ -1,8 +1,8 @@
 ## 
-* Toplama 
-* Çıkarma
-* Çarpma
-* Bölme
+## * Toplama 
+## * Çıkarma
+## * Çarpma
+## * Bölme
 * Üs 
 * Karekök 
 * Mutlak Değer 
