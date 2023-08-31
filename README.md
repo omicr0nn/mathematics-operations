@@ -1,6 +1,6 @@
 ## 
-## * Toplama 
-## * Çıkarma
+### * Toplama 
+### * Çıkarma
 ## * Çarpma
 ## * Bölme
 * Üs 
