@@ -1,9 +1,9 @@
 ## 
-· Toplama \n
-· Çıkarma
-· Çarpma
-· Bölme
-· Üs 
+* Toplama \n
+* Çıkarma
+* Çarpma
+* Bölme
+* Üs 
 · Karekök 
 · Mutlak Değer 
 · Akım 
