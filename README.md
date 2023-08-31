@@ -1,5 +1,5 @@
 ## !Feasible Operations
-### --*-- Toplama 
+### -*- Toplama 
 ### - Çıkarma
 ### * Çarpma
 ### * Bölme
