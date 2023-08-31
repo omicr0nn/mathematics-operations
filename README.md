@@ -1,5 +1,5 @@
 ## 
-· Toplama
+· Toplama \n
 · Çıkarma
 · Çarpma
 · Bölme
