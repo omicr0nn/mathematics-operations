@@ -1,4 +1,4 @@
-## Feasible Operations!
+## Feasible Operations
 #### * Toplama 
 #### * Çıkarma
 #### * Çarpma
