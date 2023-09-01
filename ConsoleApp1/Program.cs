@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 
 namespace RenkliHesapMakinesi
@@ -36,7 +36,7 @@ namespace RenkliHesapMakinesi
                 }
 
                 Console.Clear();
-                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.ForegroundColor = ConsoleColor.Magenta;
                 Console.WriteLine("╔═════════════════════════════════════════════════════╗");
                 Console.WriteLine("║         Matematik ve Fizik Hesap Makinesi           ║");
                 Console.WriteLine("╚═════════════════════════════════════════════════════╝");
@@ -71,45 +71,45 @@ namespace RenkliHesapMakinesi
                 Console.WriteLine("0n");
                 Console.ResetColor();
 
-                Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.WriteLine("\nLütfen yapmak istediğiniz işlemi seçin:" + "");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.WriteLine("1 - Toplama");
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("2 - Çıkarma");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.WriteLine("3 - Çarpma");
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("4 - Bölme");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.WriteLine("5 - Üs Hesaplama");
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("6 - Karekök Hesaplama");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.WriteLine("7 - Mutlak Değer Hesaplama");
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("8 - Akım Hesaplama");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.WriteLine("9 - Direnç Hesaplama");
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("10 - Alan Hesaplama");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.WriteLine("11 - Hacim Hesaplama");
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("12 - Alan Çevresi Hesaplama");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.WriteLine("13 - Daire Dilimi Alanı Hesaplama");
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("14 - Üçgen Alan Hesaplama");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.WriteLine("15 - Faktöriyel Hesaplama");
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("16 - 2'lik Sayıyı 10'lu Sayıya Dönüştürme");
-                Console.ForegroundColor = ConsoleColor.DarkCyan;
-                Console.WriteLine("17 - 10'lu Sayıyı 2'lik Sayıya Dönüştürme");
-                Console.ForegroundColor = ConsoleColor.White;
-                Console.WriteLine("18 - Fibonacci Sayıları");
+                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.WriteLine("\nLütfen yapmak istediğiniz işlemi seçin:" + "\n");
                 Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("1 - Toplama");
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine("2 - Çıkarma");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("3 - Çarpma");
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine("4 - Bölme");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("5 - Üs Hesaplama");
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine("6 - Karekök Hesaplama");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("7 - Mutlak Değer Hesaplama");
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine("8 - Akım Hesaplama");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("9 - Direnç Hesaplama");
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine("10 - Alan Hesaplama");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("11 - Hacim Hesaplama");
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine("12 - Alan Çevresi Hesaplama");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("13 - Daire Dilimi Alanı Hesaplama");
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine("14 - Üçgen Alan Hesaplama");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("15 - Faktöriyel Hesaplama");
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine("16 - 2'lik Sayıyı 10'lu Sayıya Dönüştürme");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("17 - 10'lu Sayıyı 2'lik Sayıya Dönüştürme");
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine("18 - Fibonacci Sayıları");
+                Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("0 - Çıkış");
                 Console.ResetColor();
 
@@ -118,6 +118,7 @@ namespace RenkliHesapMakinesi
                 if (secim == 0)
                 {
                     Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.White;
                     Console.WriteLine("Çıkış yapılıyor...");
                     break;
                 }
@@ -202,6 +203,7 @@ namespace RenkliHesapMakinesi
                         break;
 
                     default:
+                        Console.ForegroundColor = ConsoleColor.White;
                         Console.WriteLine("Geçersiz seçim. Lütfen tekrar deneyin.");
                         Console.ReadLine();
                         continue;
@@ -214,8 +216,10 @@ namespace RenkliHesapMakinesi
 
         static double ToplamaIslemi()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Birinci sayıyı girin: ");
             double sayi1 = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("İkinci sayıyı girin: ");
             double sayi2 = Convert.ToDouble(Console.ReadLine());
             return sayi1 + sayi2;
@@ -223,8 +227,10 @@ namespace RenkliHesapMakinesi
 
         static double CikarmaIslemi()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Birinci sayıyı girin: ");
             double sayi1 = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("İkinci sayıyı girin: ");
             double sayi2 = Convert.ToDouble(Console.ReadLine());
             return sayi1 - sayi2;
@@ -232,8 +238,10 @@ namespace RenkliHesapMakinesi
 
         static double CarpmaIslemi()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Birinci sayıyı girin: ");
             double sayi1 = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("İkinci sayıyı girin: ");
             double sayi2 = Convert.ToDouble(Console.ReadLine());
             return sayi1 * sayi2;
@@ -241,9 +249,11 @@ namespace RenkliHesapMakinesi
 
         static double BolmeIslemi()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Birinci sayıyı girin: ");
             double sayi1 = Convert.ToDouble(Console.ReadLine());
             Console.Write("İkinci sayıyı girin: ");
+            Console.ForegroundColor = ConsoleColor.White;
             double sayi2 = Convert.ToDouble(Console.ReadLine());
 
             if (sayi2 != 0)
@@ -252,6 +262,7 @@ namespace RenkliHesapMakinesi
             }
             else
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Hata: Bölen sıfır olamaz!");
                 return 0;
             }
@@ -259,8 +270,10 @@ namespace RenkliHesapMakinesi
 
         static double UsHesaplama()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Tabanı girin: ");
             double taban = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Üssü girin: ");
             double us = Convert.ToDouble(Console.ReadLine());
             return Math.Pow(taban, us);
@@ -268,6 +281,7 @@ namespace RenkliHesapMakinesi
 
         static double KarekokHesaplama()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Karekökünü hesaplamak istediğiniz sayıyı girin: ");
             double sayi = Convert.ToDouble(Console.ReadLine());
             return Math.Sqrt(sayi);
@@ -275,6 +289,7 @@ namespace RenkliHesapMakinesi
 
         static double MutlakDegerHesaplama()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Mutlak değerini hesaplamak istediğiniz sayıyı girin: ");
             double sayi = Convert.ToDouble(Console.ReadLine());
             return Math.Abs(sayi);
@@ -282,8 +297,10 @@ namespace RenkliHesapMakinesi
 
         static double AkimHesaplama()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Voltajı girin (V): ");
             double voltaj = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Direnç değerini girin (Ω): ");
             double direnc = Convert.ToDouble(Console.ReadLine());
             return voltaj / direnc;
@@ -291,16 +308,20 @@ namespace RenkliHesapMakinesi
 
         static double DirencHesaplama()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Voltajı girin (V): ");
             double voltaj = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Akım değerini girin (A): ");
             double akim = Convert.ToDouble(Console.ReadLine());
             return voltaj / akim;
         }
         static double AlanHesaplama()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Uzunluğu girin: ");
             double uzunluk = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Genişliği girin: ");
             double genislik = Convert.ToDouble(Console.ReadLine());
             return uzunluk * genislik;
@@ -308,10 +329,13 @@ namespace RenkliHesapMakinesi
 
         static double HacimHesaplama()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Uzunluğu girin: ");
             double uzunluk = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Genişliği girin: ");
             double genislik = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Yüksekliği girin: ");
             double yukseklik = Convert.ToDouble(Console.ReadLine());
             return uzunluk * genislik * yukseklik;
@@ -319,6 +343,7 @@ namespace RenkliHesapMakinesi
 
         static double AlanCevresiHesaplama()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Yarıçapı girin: ");
             double yaricap = Convert.ToDouble(Console.ReadLine());
             return 2 * Math.PI * yaricap;
@@ -326,8 +351,10 @@ namespace RenkliHesapMakinesi
 
         static double DaireDilimiAlaniHesaplama()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Yarıçapı girin: ");
             double yaricap = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Merkez Açısını girin (derece): ");
             double aci = Convert.ToDouble(Console.ReadLine());
             return (aci / 360) * Math.PI * Math.Pow(yaricap, 2);
@@ -335,8 +362,10 @@ namespace RenkliHesapMakinesi
 
         static double UcgenAlanHesaplama()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Taban uzunluğunu girin: ");
             double taban = Convert.ToDouble(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Yüksekliği girin: ");
             double yukseklik = Convert.ToDouble(Console.ReadLine());
             return 0.5 * taban * yukseklik;
@@ -344,6 +373,7 @@ namespace RenkliHesapMakinesi
 
         static double FaktoriyelHesaplama()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Bir sayı girin: ");
             int sayi = Convert.ToInt32(Console.ReadLine());
             int faktoriyel = 1;
@@ -356,6 +386,7 @@ namespace RenkliHesapMakinesi
 
         static double BinaryToDecimal()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("2'lik tabandaki sayıyı girin: ");
             string binary = Console.ReadLine();
 
@@ -365,10 +396,12 @@ namespace RenkliHesapMakinesi
 
         static double DecimalToBinary()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("10'lu tabandaki sayıyı girin: ");
             double decimalNumber;
             while (!double.TryParse(Console.ReadLine(), out decimalNumber))
             {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.Write("Geçerli bir ondalık sayı girin: ");
             }
 
@@ -378,15 +411,17 @@ namespace RenkliHesapMakinesi
 
         static void FibonacciNumbers()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Kaç adet Fibonacci sayısı görmek istediğinizi girin: ");
             int count;
             while (!int.TryParse(Console.ReadLine(), out count))
             {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.Write("Geçerli bir tam sayı girin: ");
             }
 
             double a = 0, b = 1;
-
+            Console.ForegroundColor = ConsoleColor.White;
             Console.Write("Fibonacci Sayıları: " + a + " " + b);
 
             for (int i = 2; i < count; i++)
@@ -406,6 +441,7 @@ namespace RenkliHesapMakinesi
 
         static void TemizleVeBekle()
         {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine("\nDevam etmek için bir tuşa basın...");
             Console.ReadKey();
         }
