@@ -115,7 +115,7 @@ while True:
 
     for i in range(len(text)):
         char = text[i]
-        color = colors[i % len(colors)]  # Renkleri döngüsüz uygulama
+        color = colors[i % len(colors)]
         sys.stdout.write(color + char)
         sys.stdout.flush()
         time.sleep(0.1)
