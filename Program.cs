@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Runtime.InteropServices;
 
 namespace RenkliHesapMakinesi
 {
@@ -8,6 +9,32 @@ namespace RenkliHesapMakinesi
         {
             while (true)
             {
+
+                
+            string text = "Coding by Omicron";
+
+                
+            ConsoleColor[] colors = {
+            ConsoleColor.Red,
+            ConsoleColor.Yellow,
+            ConsoleColor.Green,
+            ConsoleColor.Cyan,
+            ConsoleColor.Blue,
+            ConsoleColor.Magenta,
+            ConsoleColor.White,
+            };
+
+                Console.ForegroundColor = ConsoleColor.White;
+
+                for (int i = 0; i < text.Length; i++)
+                {
+                    char letter = text[i];
+                    ConsoleColor color = colors[i % colors.Length]; 
+                    Console.ForegroundColor = color;
+                    Console.Write(letter);
+                    Thread.Sleep(100); 
+                }
+
                 Console.Clear();
                 Console.ForegroundColor = ConsoleColor.Blue;
                 Console.WriteLine("╔═════════════════════════════════════════════════════╗");
@@ -169,6 +196,9 @@ namespace RenkliHesapMakinesi
 
                     case 18:
                         FibonacciNumbers();
+                        break;
+                    case 19:
+                        support();
                         break;
 
                     default:
@@ -366,6 +396,11 @@ namespace RenkliHesapMakinesi
                 a = b;
                 b = c;
             }
+        }
+
+        static void support()
+        {
+            Console.WriteLine("");
         }
         
 
