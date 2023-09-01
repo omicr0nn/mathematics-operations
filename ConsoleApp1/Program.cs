@@ -1,7 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
 
-namespace RenkliHesapMakinesi
+namespace HesapMakinesi
 {
     class Program
     {
@@ -10,17 +10,17 @@ namespace RenkliHesapMakinesi
             while (true)
             {
 
-                
-            string text = "Coding by Omicron";
 
-                
-            ConsoleColor[] colors = {
-            ConsoleColor.Red,
-            ConsoleColor.Yellow,
-            ConsoleColor.Green,
-            ConsoleColor.Cyan,
-            ConsoleColor.Blue,
-            ConsoleColor.Magenta,
+                string text = "Coding by Omicron";
+
+
+                ConsoleColor[] colors = {
+            ConsoleColor.DarkRed,
+            ConsoleColor.DarkYellow,
+            ConsoleColor.DarkGreen,
+            ConsoleColor.DarkCyan,
+            ConsoleColor.DarkBlue,
+            ConsoleColor.DarkMagenta,
             ConsoleColor.White,
             };
 
@@ -29,10 +29,10 @@ namespace RenkliHesapMakinesi
                 for (int i = 0; i < text.Length; i++)
                 {
                     char letter = text[i];
-                    ConsoleColor color = colors[i % colors.Length]; 
+                    ConsoleColor color = colors[i % colors.Length];
                     Console.ForegroundColor = color;
                     Console.Write(letter);
-                    Thread.Sleep(100); 
+                    Thread.Sleep(100);
                 }
 
                 Console.Clear();
@@ -41,31 +41,31 @@ namespace RenkliHesapMakinesi
                 Console.WriteLine("║         Matematik ve Fizik Hesap Makinesi           ║");
                 Console.WriteLine("╚═════════════════════════════════════════════════════╝");
                 Console.ResetColor();
-                Console.ForegroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.Write("C");
-                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.Write("o");
-                Console.ForegroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.Write("d");
-                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.Write("i");
-                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.Write("n");
-                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.ForegroundColor = ConsoleColor.DarkMagenta;
                 Console.Write("g ");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.Write("b");
-                Console.ForegroundColor = ConsoleColor.Red;
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Console.Write("y ");
-                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.Write("o");
-                Console.ForegroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.Write("m");
-                Console.ForegroundColor = ConsoleColor.Cyan;
+                Console.ForegroundColor = ConsoleColor.DarkCyan;
                 Console.Write("i");
-                Console.ForegroundColor = ConsoleColor.Blue;
+                Console.ForegroundColor = ConsoleColor.DarkBlue;
                 Console.Write("c");
-                Console.ForegroundColor = ConsoleColor.Magenta;
+                Console.ForegroundColor = ConsoleColor.DarkMagenta;
                 Console.Write("r");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("0n");
@@ -437,7 +437,7 @@ namespace RenkliHesapMakinesi
         {
             Console.WriteLine("");
         }
-        
+
 
         static void TemizleVeBekle()
         {
