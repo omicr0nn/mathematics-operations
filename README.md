@@ -23,7 +23,7 @@ When the program is launched, you can perform various mathematical and physics c
 
 ## Support and Contribution
 
-If you find a bug or want to contribute, please let us know through [GitHub Issues](https://github.com/omciron/HesapMakinesi/issues).
+If you find a bug or want to contribute, please let us know through [GitHub Issues](https://github.com/omicr0nn/mathematics-operations).
 
 ![Kali]()
 
