@@ -4,6 +4,7 @@ import math
 from os import system
 import sys
 import time
+import os
 
 def toplama_islemi():
     sayi1 = float(input("Birinci sayıyı girin: "))
