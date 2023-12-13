@@ -25,7 +25,7 @@ When the program is launched, you can perform various mathematical and physics c
 
 If you find a bug or want to contribute, please let us know through [GitHub Issues](https://github.com/omicr0nn/mathematics-operations).
 
-![Kali]https://i.ibb.co/hFcpw6J/math.png
+![Kali](https://i.ibb.co/hFcpw6J/math.png)
 
 ---
 
